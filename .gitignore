@@ -3,4 +3,5 @@
 .\#*
 .DS_Store
 compiled/
+build/
 /doc/

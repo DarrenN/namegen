@@ -28,6 +28,14 @@ AntimonyMerzenich
 TelluriumMauve
 ```
 
+## Install
+
+1. You will need [Racket](https://racket-lang.org/) because Lisp is the Way.
+2. Update `BIN-DIR` in `Makefile` with the directory you keep your CLI scripts in.
+3. `make install`
+4. `make build`
+5. Update your `$PATH` to include `$(BIN-DIR)/namegen/bin`
+
 ## Details
 
 Source data lives in `/data` as either JSON or CSV files. These are converted to [FASL](https://docs.racket-lang.org/reference/fasl.html) files for use in the program (so we don't need to do any parsing/conversion when running).
