@@ -1,6 +1,6 @@
 #lang info
 (define collection "namegen")
-(define deps '("base"))
+(define deps '("base" "csv-reading"))
 (define build-deps '("scribble-lib" "racket-doc" "rackunit-lib"))
 (define scribblings '(("scribblings/namegen.scrbl" ())))
 (define pkg-desc "Generate User Names")

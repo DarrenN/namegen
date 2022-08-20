@@ -4,7 +4,7 @@ BLUE=\n\033[0;34m
 
 PACKAGE-NAME=namegen
 
-BUILD-DIR=build/$(PACKAGE-NAME)
+BUILD-DIR=build
 
 BIN-DIR=/Users/yuzu/bin
 
@@ -31,7 +31,7 @@ build:
 	mkdir -p $(BUILD-DIR)
 	raco distribute $(BUILD-DIR) $(PACKAGE-NAME)
 	rm $(PACKAGE-NAME)
-	cp build/$(PACKAGE-NAME)/bin/$(PACKAGE-NAME) $(BIN-DIR)
+	cp -r $(BUILD-DIR) $(BIN-DIR)/$(PACKAGE-NAME)
 
 # Primarily for use by CI.
 # Installs dependencies as well as linking this as a package.
