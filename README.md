@@ -12,6 +12,8 @@ usage: namegen [ <option> ... ]
 
   -c, --color
      Use colors instead of cities
+  -r, --release
+     Generate Ubuntu style release name (ex: chubbyCesium)
   --help, -h
      Show this help
 ```
@@ -26,6 +28,10 @@ AntimonyMerzenich
 % namegen -c
 
 TelluriumMauve
+
+% namegen -r
+
+limpingLanthanum
 ```
 
 ## Install
@@ -43,6 +49,7 @@ Source data lives in `/data` as either JSON or CSV files. These are converted to
 There are additional CLI programs for converting the original data sources:
 
 ```
+adjectives-converter.rkt
 cities-converter.rkt
 colors-converter.rkt
 periodic-converter.rkt
